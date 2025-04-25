@@ -63,7 +63,7 @@ function etc_custom_dashboard_posts() {
         }
        
         // Echo output with tag classes added
-        echo "<hr/>
+        echo "
               <div class='post-item {$tag_classes}'>
                 <h2><a href='{$link}'>{$title}</a></h2>
                 <p>{$excerpt}</p>
