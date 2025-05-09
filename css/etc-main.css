@@ -1,28 +1,122 @@
-#custom_etc_widget .postbox-header{
-	border: 8px solid #F6F61A;
+
+#wpbody-content #dashboard-widgets #postbox-container-1 {
+	width: 100% !important
 }
 
-.post-item {
-	padding: 10px;
-	margin: 10px 0;
-	transition: all .5s ease;
+#custom_announcements_widget{
+	border: none;
+}
+#custom_announcements_widget .postbox-header, #custom_documentation_widget .postbox-header{
+	display:none;
 }
 
-.post-item:hover {
-	transform: scale(1.02);
+#custom_announcements_widget .inside{
+	padding: 0 !important;
+	padding-bottom: 30px !important;
 }
 
-
-.alert {
-	border: 3px solid red;
+#custom_announcements_widget subtitle{
+	color: #bbbbbb;
 }
 
-.notification {
-	border: 3px solid lightblue;
+#custom_announcements_widget h2, #custom_announcements_widget h3{
+	font-weight: 600;
 }
 
-.chicken-alert {
-	width:100px; 
-	display:block; 
-	margin: 10px;
+#custom_announcements_widget h2{
+	font-size: 2.5rem !important;
+	color: #fff;
+	padding-top: 0 !important;
+}
+
+#custom_announcements_widget h3{
+	font-size: 1.5rem !important;
+	padding-bottom: 10px;
+	margin-bottom: 0px !important;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#custom_announcements_widget h4{
+	font-size: 1.2rem !important;
+	margin-bottom: 1px !important;
+}
+
+.announcements .post-title{
+	background: #eee !important;
+	border-left: 5px solid rgb(173, 173, 173) !important;
+	padding: 10px !important;
+	margin-bottom: 5px !important;
+}
+
+#custom_announcements_widget p{
+	font-size: 1rem !important;
+	margin-top: 0 !important;
+}
+
+#custom_announcements_widget .date{
+	font-size: .75rem !important;
+	margin-top: 2px !important;
+}
+
+.content-container{
+	max-width: 1400px !important;
+	margin-inline: auto;
+	padding-inline: 30px;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+	.row{
+		flex-direction: column;
+	}
+}
+
+.banner{
+	background: #000;	
+  	min-height: 200px;
+  	display: flex;
+  	justify-content: left;
+  	align-items: center;
+	margin-bottom: 40px;
+}
+
+.banner .content-container{
+	width: 100%
+}
+
+.announcements{
+	flex-grow: 3;
+}
+
+.getting-started{
+	flex-grow: 1;
+}
+
+.getting-started div{
+	margin-top:20px;
+}
+
+.post-item{
+	margin-top: 20px;
+	border: 1px solid #e0e0e0;
+}
+
+.post-inner{
+	padding: 15px;
+}
+
+#custom_announcements_widget .post-item:not(:last-child){
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.announcements .alert .post-title{
+	background: #ffdddd !important;
+	border-left: 5px solid red !important;
+	padding: 10px !important;
+	margin-bottom: 5px !important;
 }
